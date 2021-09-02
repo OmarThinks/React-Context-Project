@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 
 class NavBar extends Component {
-    state = {  }
+    state = { navleft:["Home", "Products", "My Cart"] };
     render() { 
         return ( 
-            <nav>
+            <nav style={{background:"grey"}}>
                 <ul>
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>My Cart</li>
+                    {this.state.navleft.map((element)=>{
+                        return(
+                            <li style={{
+                                background:"lightgrey",
+                                color:"darkgreen",
+                                "border-color":"black"
+                            }}>{element}</li>
+                        );
+                    })}
+                    
                 </ul>
             </nav>
          );

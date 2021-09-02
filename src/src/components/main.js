@@ -13,13 +13,14 @@ class Main extends Component {
 }
     render() { 
         return ( 
-        <main>
+        <main style={{background:"lime"}}>
             <ul>
                 {this.state.todos.map((todo)=>{
                     return(<li 
                         style={{
                             background:"lightgrey",
-                            color:"darkgreen"
+                            color:"darkgreen",
+                            "border-color":"darkgrey"
                         }}>{todo}</li>)
                 })}
             </ul>

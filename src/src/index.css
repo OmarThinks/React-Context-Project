@@ -33,8 +33,7 @@ nav>ul{
 
 nav > ul >li{
   padding: 10px;
-  border-radius: 1em;
-  /*list-style: none;*/
+  border: solid 1px;
 }
 
 
@@ -44,8 +43,8 @@ nav > ul >li{
 
 main{
   display: block;
-  background-color: lime;
   padding: 1em .5em;
+  height: 100%;
 }
 
 
@@ -58,7 +57,7 @@ main > ul{
 main > ul >li{
   display: block;
   padding: .5em;
-  border: darkgrey 3px solid; 
+  border: 1px solid;
   border-radius: 1em;
   font-weight: bold;
   margin-bottom: 1em;
