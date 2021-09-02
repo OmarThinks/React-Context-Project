@@ -4,13 +4,13 @@ class NavBar extends Component {
     state = {  }
     render() { 
         return ( 
-            <div>
+            <nav>
                 <ul>
                     <li>Home</li>
                     <li>Products</li>
                     <li>My Cart</li>
                 </ul>
-            </div>
+            </nav>
          );
     }
 }
