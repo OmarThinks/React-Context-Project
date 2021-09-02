@@ -8,15 +8,29 @@ body {
 }
 
 
-
-
+/*
 *{
+  /*background-color: maroon;
+  margin: 0px;
+  padding: 0px;
 
 }
 
+*/
 
-body{
-  background-color: #eee;
+
+
+body, html, ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+
+div{
+  margin: 0px;
+  padding: 0px;
 }
 
 
@@ -26,6 +40,7 @@ body{
 
 main{
   display: block;
+  background-color: lime;
 }
 
 
@@ -37,10 +52,9 @@ li{
 }
 
 
-main > ul >li{
-  display: block;
+nav > ul >li{
+  display: inline-block;
   padding: 10px;
-  border: black 3px solid;
   border-radius: 1em;
 }
 
@@ -48,9 +62,10 @@ main > ul >li{
 
 main > ul >li{
   display: block;
-  padding: 10px;
-  border: black 3px solid;
+  padding: .5em;
+  border: darkgrey 3px solid; 
   border-radius: 1em;
+  font-weight: bold;
 }
 
 

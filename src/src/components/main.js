@@ -18,8 +18,8 @@ class Main extends Component {
                 {this.state.todos.map((todo)=>{
                     return(<li 
                         style={{
-                            background:"grey",
-                            color:"lime"
+                            background:"lightgrey",
+                            color:"darkgreen"
                         }}>{todo}</li>)
                 })}
             </ul>
