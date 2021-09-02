@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
 
+
+
+
 class Main extends Component {
-    state = {  }
+    state = { 
+        todos:[
+            "Wake Up", 
+            "Brush Your teeth",
+            "Wash your Face"
+        ] 
+}
     render() { 
         return ( 
         <main>
             <ul>
-                <li> iPhone </li>
-                <li> Labtop </li>
-                <li> Android Mobile </li>
+                {this.state.todos.map((todo)=>{
+                    return(<li 
+                        style={{
+                            background:"grey",
+                            color:"lime"
+                        }}>{todo}</li>)
+                })}
             </ul>
         </main> );
     }

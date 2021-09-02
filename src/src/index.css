@@ -15,6 +15,15 @@ body {
 }
 
 
+body{
+  background-color: #eee;
+}
+
+
+
+
+
+
 main{
   display: block;
 }
@@ -28,8 +37,20 @@ li{
 }
 
 
-main >ul >li{
+main > ul >li{
   display: block;
+  padding: 10px;
+  border: black 3px solid;
+  border-radius: 1em;
+}
+
+
+
+main > ul >li{
+  display: block;
+  padding: 10px;
+  border: black 3px solid;
+  border-radius: 1em;
 }
 
 
