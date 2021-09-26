@@ -9,7 +9,7 @@ class App extends Component {
   state = {  }
   render() { 
       return(
-        <div>
+        <div id="root_div">
           <NavBar></NavBar>
           <Main></Main>
         </div>        
