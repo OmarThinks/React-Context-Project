@@ -10,6 +10,10 @@ const ProductsList = () => {
             {name:"Mobile", id: 3},
         ]
     );
+    
+    const addProduct=()=>{
+        setProducts([...products,{name:"New Product"}])
+    }
 
     return ( 
     <div className="prodcuts-list">
@@ -18,6 +22,8 @@ const ProductsList = () => {
                 return(<li key={product.id}>{product.name}</li>);
             })}
         </ul>
+
+        <button onClick={addProduct}>Add a Product</button>
     </div> );
 }
  
