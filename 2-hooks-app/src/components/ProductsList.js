@@ -23,7 +23,7 @@ const ProductsList = () => {
                 return(<li key={product.id}>{product.name}</li>);
             })}
         </ul>
-        <AddProductForm />
+        <AddProductForm addProduct={addProduct}/>
     </div> );
 }
  

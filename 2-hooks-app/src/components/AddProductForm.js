@@ -1,14 +1,19 @@
 import React,{useState} from 'react';
 
 
-const AddProductForm = () => {
+const AddProductForm = ({addProduct}) => {
     
 
     const [title,setTitle] = useState("Hey");
 
 
+    const submitForm=(e)=>{
+        e.preventDefault();
+        addProduct();
+    }
+
     return ( 
-        <form>
+        <form onSubmit={submitForm}>
             <label>Product Name:</label>
             <input type="text" name="name" 
             value={title} onChange={(e)=>{
