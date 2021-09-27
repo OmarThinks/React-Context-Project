@@ -17,7 +17,7 @@ const AddProductForm = ({addProduct}) => {
             value={title} onChange={(e)=>{
                 setTitle(e.target.value);
             }}
-            required active/>
+            required/>
             <input type="submit" value="Create a Product"/>
         </form>
      );

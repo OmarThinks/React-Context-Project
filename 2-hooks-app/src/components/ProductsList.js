@@ -18,11 +18,13 @@ const ProductsList = () => {
         setProducts([...products,{name:title, id:uuid()}])
     }
 
-
-
     useEffect(()=>{
         console.log(salary);
-    });
+    }, [salary]);
+
+    useEffect(()=>{
+        console.log(products);
+    }, [products]);
 
 
     return ( 
