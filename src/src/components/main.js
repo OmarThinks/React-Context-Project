@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 class Main extends Component {
     static contextType = ThemeContext;
     render() { 
-        
-
         return ( 
-        
+        <AuthContext.Consumer>{(authContext)=>{
+            return (
         <ThemeContext.Consumer>{(context)=>{
         console.log(context);
       
@@ -20,15 +20,9 @@ class Main extends Component {
                 <li style={{background:theme.bg}}>Second element</li>
                 <li style={{background:theme.bg}}>Third element</li>
             </ul>
-
-        </main> 
-
-            );
-        }}
-
-       
-        </ThemeContext.Consumer>
-        );
+        </main> );}}
+        </ThemeContext.Consumer>);}}
+        </AuthContext.Consumer>);
     }
 }
  
