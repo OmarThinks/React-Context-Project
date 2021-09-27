@@ -14,8 +14,9 @@ const ProductsList = () => {
     return ( 
     <div className="prodcuts-list">
         <ul>
-            <li>CPU</li>
-            <li>Labtop</li>
+            {products.map(product=>{
+                return(<li key={product.id}>{product.name}</li>);
+            })}
         </ul>
     </div> );
 }
