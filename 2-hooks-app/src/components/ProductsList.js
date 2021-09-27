@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import { v4 as uuid } from 'uuid';
 import AddProductForm from './AddProductForm';
 
@@ -17,6 +17,13 @@ const ProductsList = () => {
     const addProduct=(title)=>{
         setProducts([...products,{name:title, id:uuid()}])
     }
+
+
+
+    useEffect(()=>{
+        console.log(salary);
+    });
+
 
     return ( 
     <div className="prodcuts-list">
