@@ -12,8 +12,8 @@ const ProductsList = () => {
         ]
     );
     
-    const addProduct=()=>{
-        setProducts([...products,{name:"New Product", id:uuid()}])
+    const addProduct=(title)=>{
+        setProducts([...products,{name:title, id:uuid()}])
     }
 
     return ( 
