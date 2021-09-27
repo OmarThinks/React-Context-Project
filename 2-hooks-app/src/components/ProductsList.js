@@ -11,6 +11,8 @@ const ProductsList = () => {
             {name:"Mobile", id: 3},
         ]
     );
+
+    const [salary, setSalary] = useState(25);
     
     const addProduct=(title)=>{
         setProducts([...products,{name:title, id:uuid()}])
@@ -24,6 +26,13 @@ const ProductsList = () => {
             })}
         </ul>
         <AddProductForm addProduct={addProduct}/>
+
+        <div>
+            <button onClick={()=>{setSalary(salary+1)}}>Increase Salary: {salary}</button>
+
+        </div>
+
+
     </div> );
 }
  

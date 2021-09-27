@@ -1,11 +1,8 @@
 import React,{useState} from 'react';
 
-
 const AddProductForm = ({addProduct}) => {
     
-
     const [title,setTitle] = useState("");
-
 
     const submitForm=(e)=>{
         e.preventDefault();
