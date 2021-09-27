@@ -8,13 +8,18 @@ class Main extends Component {
         return ( 
         <AuthContext.Consumer>{(authContext)=>{
             return (
-        <ThemeContext.Consumer>{(context)=>{
-        console.log(context);
+        <ThemeContext.Consumer>{(themeContext)=>{
+        console.log(themeContext);
       
-        const {isLightTheme, light, dark}=context;
+        const {isLightTheme, light, dark}=themeContext;
         const theme = isLightTheme ? light : dark;
             return(
-        <main style={{background:theme.ui, color: theme.syntax}}>
+        
+        <main 
+            style={{background:theme.ui, color: theme.syntax}}
+            onClick={authContext.toggleAuth}
+        >
+        {authContext.isAuthenticated?"The user is Authentiated":"The user is not Authenticated"}
             <ul>
                 <li style={{background:theme.bg}}>First element</li>
                 <li style={{background:theme.bg}}>Second element</li>
