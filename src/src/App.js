@@ -5,6 +5,7 @@ import NavBar from './components/navbar';
 
 import ThemeContextProvider from './contexts/ThemeContext';
 import ThemeToggle from './components/ThemeToggle';
+import  AuthContextProvider  from './contexts/AuthContext';
 
 class App extends Component {
   state = {  }
@@ -12,9 +13,11 @@ class App extends Component {
       return(
         <div id="root_div">
           <ThemeContextProvider>
-            <NavBar></NavBar>
-            <Main></Main>
-            <ThemeToggle/>
+            <AuthContextProvider>
+              <NavBar></NavBar>
+              <Main></Main>
+              <ThemeToggle/>
+            </AuthContextProvider>
           </ThemeContextProvider>
         </div>        
      );
