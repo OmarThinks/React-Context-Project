@@ -1,8 +1,16 @@
-import { Component } from 'react';
+import { Component, Fragment } from 'react';
+import { ThemeContext } from '../contexts/ThemeContext';
+
 
 class ThemeToggle extends Component {
-    render() { 
-        return <button>Toogle the Theme</button>;
+    static contextType = ThemeContext;
+
+
+    render() {
+        console.log(this.context);
+        const {toggleTheme}=this.context;
+        
+        return <button onClick={toggleTheme}>Toogle the Theme</button>;
     }
 }
  
