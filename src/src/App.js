@@ -4,6 +4,7 @@ import Main from './components/main';
 import NavBar from './components/navbar';
 
 import ThemeContextProvider from './contexts/ThemeContext';
+import ThemeToggle from './components/ThemeToggle';
 
 class App extends Component {
   state = {  }
@@ -13,6 +14,7 @@ class App extends Component {
           <ThemeContextProvider>
             <NavBar></NavBar>
             <Main></Main>
+            <ThemeToggle/>
           </ThemeContextProvider>
         </div>        
      );
