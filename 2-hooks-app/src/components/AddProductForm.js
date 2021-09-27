@@ -12,7 +12,7 @@ const AddProductForm = () => {
             <label>Product Name:</label>
             <input type="text" name="name" 
             value={title} onChange={(e)=>{
-                console.log(e.target.value);
+                setTitle(e.target.value);
             }}
             required/>
             <input type="submit" value="Create a Product"/>
