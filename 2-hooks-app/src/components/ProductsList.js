@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-
+import { v4 as uuid } from 'uuid';
 
 const ProductsList = () => {
     
@@ -12,7 +12,7 @@ const ProductsList = () => {
     );
     
     const addProduct=()=>{
-        setProducts([...products,{name:"New Product", id:4}])
+        setProducts([...products,{name:"New Product", id:uuid()}])
     }
 
     return ( 
