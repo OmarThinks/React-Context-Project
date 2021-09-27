@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
-
-
-
 class Main extends Component {
     static contextType = ThemeContext;
     render() { 
-        console.log(this.context);
-        const {isLightTheme, light, dark}=this.context;
-        const theme = isLightTheme ? light : dark;
+        
 
         return ( 
-        <main style={{background:theme.bg, color: theme.syntax}}>
+        
+        <ThemeContext.Consumer>{(context)=>{
+        console.log(context);
+      
+        const {isLightTheme, light, dark}=context;
+        const theme = isLightTheme ? light : dark;
+            return(
+        <main style={{background:theme.ui, color: theme.syntax}}>
             <ul>
-                <li>First element</li>
-                <li>Second element</li>
-                <li>Third element</li>
+                <li style={{background:theme.bg}}>First element</li>
+                <li style={{background:theme.bg}}>Second element</li>
+                <li style={{background:theme.bg}}>Third element</li>
             </ul>
 
-        </main> );
+        </main> 
+
+            );
+        }}
+
+       
+        </ThemeContext.Consumer>
+        );
     }
 }
  

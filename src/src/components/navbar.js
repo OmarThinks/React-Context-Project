@@ -12,7 +12,7 @@ class NavBar extends Component {
         const {isLightTheme, light, dark}=this.context;
         const theme = isLightTheme ? light : dark;
         return ( 
-          <nav style={{background:theme.bg, color: theme.syntax}}>
+          <nav style={{background:theme.ui, color: theme.syntax}}>
               <ul>
                 <li>Home</li>
                 <li>Products</li>
