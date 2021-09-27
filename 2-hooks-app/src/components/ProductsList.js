@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import { v4 as uuid } from 'uuid';
+import AddProductForm from './AddProductForm';
 
 const ProductsList = () => {
     
@@ -22,8 +23,7 @@ const ProductsList = () => {
                 return(<li key={product.id}>{product.name}</li>);
             })}
         </ul>
-
-        <button onClick={addProduct}>Add a Product</button>
+        <AddProductForm />
     </div> );
 }
  
