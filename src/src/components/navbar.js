@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 
 class NavBar extends Component {
-    state = 
-    { 
-        navleft:["Home", "Products", "My Cart"]
-    };
+
     render() { 
         return ( 
-          <div></div>
+          <navbar>
+              <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Login</li>
+                <li>Logout</li>
+              </ul>
+          </navbar>
          );
     }
 }
