@@ -5,14 +5,14 @@ const ProductsList = () => {
     
     const [products,setProducts]= useState(
         [
-            {name:"CPU", id: 1},
+            {name:"CPU",    id: 1},
             {name:"Labtop", id: 2},
             {name:"Mobile", id: 3},
         ]
     );
     
     const addProduct=()=>{
-        setProducts([...products,{name:"New Product"}])
+        setProducts([...products,{name:"New Product", id:4}])
     }
 
     return ( 
