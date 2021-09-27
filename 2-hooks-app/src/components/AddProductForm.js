@@ -11,7 +11,9 @@ const AddProductForm = () => {
         <form>
             <label>Product Name:</label>
             <input type="text" name="name" 
-            value={title}
+            value={title} onChange={(e)=>{
+                console.log(e.target.value);
+            }}
             required/>
             <input type="submit" value="Create a Product"/>
         </form>
