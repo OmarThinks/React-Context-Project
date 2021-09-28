@@ -1,19 +1,6 @@
 import React, { Component, useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
-/*
-class NavBar extends Component {
-    static contextType = ThemeContext;
-    //This climbs up the component tree, to find the first time 
-    //there is a provider for this context
-    
-    render() {
 
-        return ( 
-          
-         );
-    }
-}
-*/
 
 const NavBar = () => {
     const context =useContext(ThemeContext);
